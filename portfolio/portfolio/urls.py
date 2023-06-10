@@ -22,10 +22,10 @@ app_name = 'portfolio'
 
 urlpatterns = [
     path('', views.index_view),
-    path('index/', views.index_view, name='index'),
-    path('projetos/', views.projetos_view, name='projetos'),
-    path('contactos/', views.contactos_view, name='contactos'),
-    path('jsplayground/', views.jsplayground_view, name='jsplayground'),
-    path('sobre/', views.sobre_view, name='sobre'),
-    path('aboutme/', views.aboutme_view, name='aboutme'),
+    path('index', views.index_view, name='index'),
+    path('projetos', views.projetos_view, name='projetos'),
+    path('contactos', views.contactos_view, name='contactos'),
+    path('jsplayground', views.jsplayground_view, name='jsplayground'),
+    path('sobre', views.sobre_view, name='sobre'),
+    path('aboutme', views.aboutme_view, name='aboutme'),
 ]
