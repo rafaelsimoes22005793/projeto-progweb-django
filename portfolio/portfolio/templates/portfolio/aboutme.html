@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+{% extends 'portfolio/layout.html' %}
+
+<head>
+  {% load static %}
+    <link rel="stylesheet" href="{% static 'portfolio/css/style.css' %}">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <meta name="author" content="Rafael Simões">
+  <meta name="description" content="digital portfolio">
+  <meta name="keywords" content="palavras chave">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <title>O meu portfólio</title>
+  <link rel="icon" href="img/lusophone-university-humanities-technologies-lisbon-portugal.jpg" type="image/x-icon" />
+</head>
+
+<body>
+
+
+
+  <div class="navbar" id="menu">
+    <a href="index.html" id="op1">Home</a>
+    <a href="projetos.html" id="op2">Projetos</a>
+    <a href="JSPlayground.html" id="op7">JSPlayground</a>
+    <a href="sobre.html" id="op4">Sobre</a>
+    <a href="contactos.html" id="op5">Contactos</a>
+    <div class="darkmode" id="op6">
+        <button class="dmbtn"> <i class="fa-regular fa-sun" id="dmbtn" onclick=modes()></i> </button>
+    </div>
+</div>
+
+  <div class="fade-in-text">
+    <div class="timeline">
+      <div class="container left">
+        <div class="content">
+          <h2>Quem sou eu?</h2>
+          <p>O meu nome é Rafael Simões, nascido e criado no Cacém</p>
+          <p>Tenho 21 anos decidi tirar o curso de Engenharia Informática na <a href="https://www.ulusofona.pt/">Universidade Lusófona</a>, pois toda a minha vida fui muito ligado a
+            computadores e tecnologias.</p>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <h2>Educação</h2>
+          <p>Frequentei a Escola Básica António Torrado, a Escola Básica Dom Domingos Jardo, e a Escola Secundária
+            Matias Aires</p>
+            <p> <a href="https://www.aeams.pt/cms/index.php/pt/">Link da página do agrupamento</a></p>
+        </div>
+      </div>
+      <div class="container left">
+        <div class="content">
+          <h2>Aptidões e competências pessoais</h2>
+          <p>Considero me uma pessoa com uma solução sempre pronta face a qualquer tipo de problemas!</p>
+          <p>A maior parte dos projetos que já trabalhei, foram em grupo, e sempre soube lidar com os diferentes pontos de vista/opiniões</p>
+          <p>Sou uma pessoa que adora socializar e que adora fazer novas amizades!</p>
+          <p>Em termos linguisticos, considero me fluente em Portugues e Ingles</p>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <h2>Interesses e hobbies</h2>
+          <p>Adoro sair com amigos, jogar videojogo, assistir futebol e basquetball e programar!</p>
+        </div>
+      </div>
+      <div class="container left">
+        <div class="content">
+          <h2>Experiencia profissional</h2>
+          <p>Infelizmente, dentro da área ainda não tenho qualquer tipo de experiencia profissional, apenas os projetos da faculdade. 
+            Mas já trabalhei como monitor com crianças do Jardim de Infancia ao 2º Ciclo</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <footer>
+    <div>
+      Rafael Simões - a22202620 - Universidade Lusófona 2023
+    </div>
+  </footer>
+
+
+
+
+
+</body>
+
+</html>

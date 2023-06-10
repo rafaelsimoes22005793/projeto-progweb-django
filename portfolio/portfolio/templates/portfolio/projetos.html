@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'portfolio/css/style.css' %}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <meta name="author" content="Rafael Simões">
+    <meta name="description" content="digital portfolio">
+    <meta name="keywords" content="palavras chave">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <title>O meu portfólio</title>
+    <link rel="icon" href="img/lusophone-university-humanities-technologies-lisbon-portugal.jpg" type="image/x-icon" />
+</head>
+
+<body>
+
+
+
+    <div class="navbar" id="menu">
+        <a href="index.html" id="op1">Home</a>
+        <a href="projetos.html" id="op2">Projetos</a>
+        <a href="JSPlayground.html" id="op7">JSPlayground</a>
+        <a href="sobre.html" id="op4">Sobre</a>
+        <a href="contactos.html" id="op5">Contactos</a>
+        <div class="darkmode" id="op6">
+            <button class="dmbtn"> <i class="fa-regular fa-sun" id="dmbtn" onclick=modes()></i> </button>
+        </div>
+    </div>
+
+    <div class="fade-in-text">
+        <div class="timeline">
+            <div class="container left">
+                <div class="content">
+                    <h2>Titulo: DEISI GreatGame</h2>
+                    <p>Descrição: Jogo de tabuleiro temático do anime Demon Slayer!</p>
+                    <p>Ano de realização: 2022</p>
+                    <p>Linguagem: Java</p>
+                    <p style="color: white"><a href="https://github.com/Guchalo/LP2_22005787_22005793">Link</a></p>
+                    {% load static %}
+                    <img src="{% static 'portfolio/images/lusophone-university-humanities-technologies-lisbon-portugal.jpg' %}">
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <h2>Titulo: FireTracker</h2>
+                    <p>Descrição: Aplicação móvel que rastreia os fogos em Portugal!</p>
+                    <p>Ano de realização: 2022</p>
+                    <p>Linguagem: Kotlin e Java</p>
+                    <p style="color: white"><a href="https://github.com/ULHT-CM-2021-22/22005787-22005793">Link</a></p>
+                    {% load static %}
+                    <img src="{% static 'portfolio/images/lusophone-university-humanities-technologies-lisbon-portugal.jpg' %}">
+                </div>
+            </div>
+            <div class="container left">
+                <div class="content">
+                    <h2>Titulo: MyHome</h2>
+                    <p>Descrição: Sistema de uma SmartHome automatizado!</p>
+                    <p>Ano de realização: 2022</p>
+                    <p>Linguagem: C</p>
+                    <p style="color: white"><a
+                            href="https://www.tinkercad.com/things/86YPUv2t7dj-projeto-final-aac">Link</a></p>
+                            {% load static %}
+                            <img src="{% static 'portfolio/images/lusophone-university-humanities-technologies-lisbon-portugal.jpg' %}">
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <h2>Titulo: BombRoad</h2>
+                    <p>Descrição: Jogo bombroad!</p>
+                    <p>Ano de realização: 2021</p>
+                    <p>Linguagem: C</p>
+                    <p style="color: white"><a href="https://replit.com/@rafaelsimoes220/recursofinal#main.c">Link</a>
+                    </p>
+                    {% load static %}
+                    <img src="{% static 'portfolio/images/lusophone-university-humanities-technologies-lisbon-portugal.jpg' %}">
+                </div>
+            </div>
+            <div class="container left">
+                <div class="content">
+                    <h2>Titulo: Xadrez</h2>
+                    <p>Jogo de xadrez realizado para o ambito da cadeira de Fundamentos de Programação</p>
+                    <p>Ano de realização: 2021</p>
+                    <p>Linguagem: Kotlin</p>
+                    <p style="color: white"><a href="https://github.com/rafaelsimoes22005793/xadrezFP">Link</a></p>
+                    {% load static %}
+                    <img src="{% static 'portfolio/images/lusophone-university-humanities-technologies-lisbon-portugal.jpg' %}">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div>
+            Rafael Simões - a22202620 - Universidade Lusófona 2023
+        </div>
+    </footer>
+
+
+
+
+
+</body>
+
+</html>
+

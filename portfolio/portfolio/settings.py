@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-wxmep#tx_3uo6g1)x54^k1l@fethy9f5pyk#)*81&fv+#9xbkz
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['rsimoes.pythonanywhere.com']
+ALLOWED_HOSTS = ['rsimoes.pythonanywhere.com', ".localhost", "127.0.0.1", "[::1]"]
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'portfolio',
 ]
 
 MIDDLEWARE = [

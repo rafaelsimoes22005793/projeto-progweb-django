@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'portfolio/css/style.css' %}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <meta name="author" content="Rafael Simões">
+    <meta name="description" content="digital portfolio">
+    <meta name="keywords" content="palavras chave">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <title>O meu portfólio</title>
+    <link rel="icon" href="img/lusophone-university-humanities-technologies-lisbon-portugal.jpg" type="image/x-icon" />
+</head>
+
+<body>
+
+
+
+    <div class="navbar" id="menu">
+        <a href="index.html" id="op1">Home</a>
+        <a href="projetos.html" id="op2">Projetos</a>
+        <a href="JSPlayground.html" id="op7">JSPlayground</a>
+        <a href="sobre.html" id="op4">Sobre</a>
+        <a href="contactos.html" id="op5">Contactos</a>
+        <div class="darkmode" id="op6">
+            <button class="dmbtn"> <i class="fa-regular fa-sun" id="dmbtn" onclick=modes()></i> </button>
+        </div>
+    </div>
+
+
+    <div class="fade-in-text">
+
+
+        <h1 id="js" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">JavaScript Playground</h1>
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <div class="calculadora">
+
+            <input type="text" placeholder="Faça uma conta" id="conta" />
+
+            <button onclick="fazContas(this)">Resultado</button>
+            <button onclick="limpar(this)">Clear</button>
+
+        </div>
+
+        <p class="resultadoConta">
+            <label for="resultado" id="resultado"> </label>
+        </p>
+
+        <div class="displayNome">
+
+            <input type="text" placeholder="Insira o seu nome" id="nome" />
+
+            <button onclick="submitName(this)">Submit</button>
+            <button onclick="limparNome(this)">Clear</button>
+
+        </div>
+
+        <div class="nomes">
+            <label for="name" id="name1"> </label>
+            <label for="name" id="name2"> </label>
+            <label for="name" id="name3"> </label>
+        </div>
+
+        </p>
+
+
+
+
+        <div class="displayNome">
+            <button onclick="inserirData(this)">Data</button>
+        </div>
+
+        <p>
+            <label class="divData" id="todayDate"> </label>
+        </p>
+
+
+
+
+
+
+
+    </div>
+
+    </div>
+
+
+
+
+
+
+    <footer>
+        <div>
+            Rafael Simões - a22202620 - Universidade Lusófona 2023
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
