@@ -15,7 +15,10 @@ def sobre_view(request):
 	return render(request, 'portfolio/sobre.html')
 
 def jsplayground_view(request):
-	return render(request, 'portfolio/jsplayground.html')
+	return render(request, 'portfolio/JSPlayground.html')
 
 def aboutme_view(request):
 	return render(request, 'portfolio/aboutme.html')
+
+def sobre_view(request):
+	return render(request, 'portfolio/sobre.html')
