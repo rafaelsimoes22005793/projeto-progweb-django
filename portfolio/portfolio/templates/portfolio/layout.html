@@ -14,11 +14,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet">
   <title>O meu portfólio</title>
-  <link rel="icon" href="img/lusophone-university-humanities-technologies-lisbon-portugal.jpg" type="image/x-icon" />
+  <link rel="icon" href="/static/portfolio/img/lusophone-university-humanities-technologies-lisbon-portugal.jpg" type="image/x-icon" />
   <script src="https://kit.fontawesome.com/8c67d0fe76.js" crossorigin="anonymous"></script>
 </head>
 {% endblock head %}
 
+{% load static %}
+<img src="{% static 'portfolio/images/image.png' %}">
 
 {% block body %}
 <body>
