@@ -25,7 +25,7 @@ urlpatterns = [
     path('index', views.index_view, name='index'),
     path('projetos', views.projetos_view, name='projetos'),
     path('contactos', views.contactos_view, name='contactos'),
-    path('jsplayground', views.jsplayground_view, name='jsplayground'),
+    path('jsplayground', views.jsplayground_view, name='JSPlayground'),
     path('sobre', views.sobre_view, name='sobre'),
     path('aboutme', views.aboutme_view, name='aboutme'),
     
