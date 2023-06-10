@@ -28,5 +28,5 @@ urlpatterns = [
     path('jsplayground', views.jsplayground_view, name='jsplayground'),
     path('sobre', views.sobre_view, name='sobre'),
     path('aboutme', views.aboutme_view, name='aboutme'),
-    path('sobre', views.sobre_view, name='sobre'),
+    
 ]

@@ -1,5 +1,5 @@
-{% block head %}
 <head>
+  {% block head %}
   {% load static %}
   <link rel="stylesheet" href="{% static 'portfolio/css/style.css' %}">
   <meta charset="utf-8">
@@ -16,19 +16,17 @@
   <title>O meu portfólio</title>
   <link rel="icon" href="/static/portfolio/img/lusophone-university-humanities-technologies-lisbon-portugal.jpg" type="image/x-icon" />
   <script src="https://kit.fontawesome.com/8c67d0fe76.js" crossorigin="anonymous"></script>
+  {% endblock head %}
 </head>
-{% endblock head %}
 
-{% load static %}
-<img src="{% static 'portfolio/images/image.png' %}">
 
-{% block body %}
 <body>
-  {% block header %}
+  {% block body %}
     <header>
-
-      {% block menu %}
+      {% block header %}
+      
       <div class="navbar" id="menu">
+        {% block menu %}
         <a href="{% url 'index' %}" id="op1">Home</a>
         <a href="{% url 'projetos' %}" id="op2">Projetos</a>
         <a href="{% url 'jsplayground' %}" id="op7">JSPlayground</a>
@@ -37,25 +35,29 @@
         <div class="darkmode" id="op6">
             <button class="dmbtn"> <i class="fa-regular fa-sun" id="dmbtn" onclick=modes()></i> </button>
         </div>
+        {% endblock menu %}
     </div>
-      {% endblock menu %}
+      
 
     </header>
     {% endblock header %}
     
+    {% block main %}
     <main> 
-        {% block main %}
-
-        {% endblock main %}
+        
     </main>
+    {% endblock main %}
 
+    {% endblock body %}
 </body>
-{% endblock body %}
 
-    {% block footer %}
+
+    
     <footer id="footer">
+      {% block footer %}
         <div class="divFooter" id="divFooter">
             Rafael Simões - a22202620 - Universidade Lusófona 2022/2023
         </div>
+      {% endblock footer %}  
     </footer>
-    {% endblock footer %}
+    
