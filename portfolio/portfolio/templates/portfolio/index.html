@@ -9,7 +9,7 @@
     {% load static %}
     <link rel="stylesheet" href="{% static 'portfolio/css/style.css' %}">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="{% static 'portfolio/js/script.js' %}"></script>
     <meta name="author" content="Rafael Simões">
     <meta name="description" content="digital portfolio">
     <meta name="keywords" content="palavras chave">
@@ -26,18 +26,7 @@
 
 
 
-    <div class="navbar" id="menu">
-        {% block menu %}
-        <a href="{% url 'index' %}" id="op1">Home</a>
-        <a href="{% url 'projetos' %}" id="op2">Projetos</a>
-        <a href="{% url 'JSPlayground' %}" id="op7">JSPlayground</a>
-        <a href="{% url 'sobre' %}" id="op4">Sobre</a>
-        <a href="{% url 'contactos' %}" id="op5">Contactos</a>
-        <div class="darkmode" id="op6">
-            <button class="dmbtn"> <i class="fa-regular fa-sun" id="dmbtn" onclick=modes()></i> </button>
-        </div>
-        {% endblock menu %}
-    </div>
+    
 
     <section class="hero" id="frase">
         {% block frase %}
