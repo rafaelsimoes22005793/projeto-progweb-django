@@ -11,18 +11,18 @@
 
         {% for post in posts %}
 
-            <div>
+        <div class="divPosts">
+            <h2>{{post.titulo}}</h2>
+            <p>Autor: {{post.autor}}</p>
+            <p>Descrição: {{post.descricao}}</p>
+            <p>Data: {{post.data}}</p>
+        </div>
 
-            </div>
-            
 
-                <h2>{{post.titulo}}</h2>
-                <p>Autor: {{post.autor}}</p>
-                <p>Descrição: {{post.descricao}}</p>
-                <p>Data: {{post.data}}</p>
 
-            
-        
+
+
+
 
         {% endfor %}
 
