@@ -22,6 +22,7 @@ function modes(){
         op5.color = "#000000";
         op6.color = "#000000";
         op7.color = "#000000";
+        op8.color = "#000000";
         footer.backgroundColor = "rgb(255,255,255)";
         divFooter.backgroundColor = "rgb(255,255,255)";
         divFooter.color = "#000000";
@@ -37,6 +38,7 @@ function modes(){
         op5.color = "#ffffff";
         op6.color = "#ffffff";
         op7.color = "#ffffff";
+        op8.color = "#ffffff";
         footer.backgroundColor = "rgb(51,51,51)"; 
         divFooter.backgroundColor = "rgb(51,51,51)"; 
         divFooter.color = "#ffffff";

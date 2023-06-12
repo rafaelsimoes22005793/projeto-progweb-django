@@ -59,6 +59,34 @@ table, th, td {
   padding: 16px;
 }
 
+.divPosts {
+  width: 300px;
+  height: 360px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-bottom: 80px;
+  margin: -150px 0 0 -150px;
+  border: 1px solid black;
+  text-align: center;
+  justify-content: center;
+  background: linear-gradient(rgba(116, 116, 116, 0.5), rgba(116, 116, 116, 0.5));
+  border-radius: 3px;
+  border: 15px solid rgb(255, 140, 0);
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.divPosts > p {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #eee;
+  flex-direction: row;
+}
+
 .divContactos {
   width: 300px;
   height: 360px;
@@ -538,6 +566,7 @@ footer {
   background-color: white;
   position: relative;
   border-radius: 6px;
+  
 }
 
 .content img{

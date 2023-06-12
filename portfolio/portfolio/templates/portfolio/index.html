@@ -3,32 +3,14 @@
 
 {% extends "portfolio/layout.html" %}
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    {% load static %}
-    <link rel="stylesheet" href="{% static 'portfolio/css/style.css' %}">
-    <link rel="stylesheet" href="style.css">
-    <script src="{% static 'portfolio/js/script.js' %}"></script>
-    <meta name="author" content="Rafael Simões">
-    <meta name="description" content="digital portfolio">
-    <meta name="keywords" content="palavras chave">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
-    <title>O meu portfólio</title>
-    <link rel="icon" href="img/lusophone-university-humanities-technologies-lisbon-portugal.jpg" type="image/x-icon" />
-    <script src="https://kit.fontawesome.com/8c67d0fe76.js" crossorigin="anonymous"></script>
-</head>
-
 <body>
 
 
 
     
-
-    <section class="hero" id="frase">
+    <main>
+        {% block main %}
+       <section class="hero" id="frase">
         {% block frase %}
         <div class="hero-inner">
             <div class="fade-in-text">
@@ -38,7 +20,10 @@
             </div>
         </div>
         {% endblock frase %}
-    </section>
+    </section> 
+    {% endblock main %}
+    </main>
+    
     
 
     <footer id="footer">

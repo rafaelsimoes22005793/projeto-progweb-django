@@ -1,42 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt">
 
-<head>
-    {% load static %}
-    <link rel="stylesheet" href="{% static 'portfolio/css/style.css' %}">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <meta name="author" content="Rafael Simões">
-    <meta name="description" content="digital portfolio">
-    <meta name="keywords" content="palavras chave">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
-    <title>O meu portfólio</title>
-    <link rel="icon" href="img/lusophone-university-humanities-technologies-lisbon-portugal.jpg" type="image/x-icon" />
-</head>
+{% extends "portfolio/layout.html" %}
 
 <body>
 
-
-
-    <div class="navbar" id="menu">
-        {% block menu %}
-        <a href="{% url 'index' %}" id="op1">Home</a>
-        <a href="{% url 'projetos' %}" id="op2">Projetos</a>
-        <a href="{% url 'JSPlayground' %}" id="op7">JSPlayground</a>
-        <a href="{% url 'sobre' %}" id="op4">Sobre</a>
-        <a href="{% url 'contactos' %}" id="op5">Contactos</a>
-        <div class="darkmode" id="op6">
-            <button class="dmbtn"> <i class="fa-regular fa-sun" id="dmbtn" onclick=modes()></i> </button>
-        </div>
-        {% endblock menu %}
-    </div>
-
-    <div class="fade-in-text">
+    {% block main %}
+    <main>
+        
+      <div class="fade-in-text">
             <table>
                 <tr>
     
@@ -66,7 +38,12 @@
                 
             </table>
         
-      </div>
+      </div>  
+
+    </main>
+    {% endblock main %}
+
+    
 
 
 

@@ -27,6 +27,7 @@ urlpatterns = [
     path('projetos', views.projetos_view, name='projetos'),
     path('contactos', views.contactos_view, name='contactos'),
     path('jsplayground', views.jsplayground_view, name='JSPlayground'),
+    path('blog', views.blog_view, name='blog'),
     path('sobre', views.sobre_view, name='sobre'),
     path('aboutme', views.aboutme_view, name='aboutme'),
     

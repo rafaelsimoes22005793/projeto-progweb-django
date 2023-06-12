@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+{% extends "portfolio/layout.html" %}
+
+
+<body>
+
+    {% block main %}
+    <main>
+
+        {% for post in posts %}
+
+        <div class="fade-in-text">
+            <div class="divPosts">
+
+                <h2>{{post.titulo}}</h2>
+                <p>Autor: {{post.autor}}</p>
+                <p>Descrição: {{post.descricao}}</p>
+                <p>Data: {{post.data}}</p>
+
+            </div>
+        </div>
+
+        {% endfor %}
+
+
+
+    </main>
+    {% endblock main %}
+
+
+
+
+
+    <footer>
+        <div>
+            Rafael Simões - a22202620 - Universidade Lusófona 2023
+        </div>
+    </footer>
+
+
+
+
+
+</body>
+
+</html>
