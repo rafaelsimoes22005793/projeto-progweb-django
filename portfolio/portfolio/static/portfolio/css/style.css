@@ -100,7 +100,7 @@ table, th, td {
   justify-content: center;
   background: linear-gradient(rgba(116, 116, 116, 0.5), rgba(116, 116, 116, 0.5));
   border-radius: 3px;
-  border: 15px solid rgb(255, 140, 0);
+  border: 15px solid rgb(60, 0, 255);
   padding: 50px;
   border-radius: 10px;
 }
