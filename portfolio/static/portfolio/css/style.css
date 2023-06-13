@@ -60,7 +60,7 @@ table, th, td {
 }
 
 .content{
-  background-color: transparent;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/static/portfolio/img/IMG_3730.jpg);
 
 }
 
