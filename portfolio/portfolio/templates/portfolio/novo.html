@@ -4,7 +4,7 @@
 
 <div class="newPost">
     <h3 style="font-size: 30px; color: rgb(255, 140, 0)">Novo Post</h3>
-    <form action="" method="POST">
+    <form action="" method="POST" enctype="multipart/form-data">
         {% csrf_token %}
         {{ form.as_p }}
 

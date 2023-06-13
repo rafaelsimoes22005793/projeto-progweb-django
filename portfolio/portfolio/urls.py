@@ -1,6 +1,8 @@
 from django.contrib import admin
 from django.urls import path, include
 from . import views
+from django.conf import settings
+from django.conf.urls.static import static
 
 app_name = 'portfolio'
 
@@ -20,3 +22,7 @@ urlpatterns = [
     path('apaga/<int:post_id>', views.apaga_post_view, name='apaga'),
     
 ]
+
+urlpatterns += static(
+      settings.MEDIA_URL,
+      document_root=settings.MEDIA_ROOT)

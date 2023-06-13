@@ -6,6 +6,7 @@ class Post(models.Model):
     descricao = models.CharField(max_length=500)
     link = models.CharField(max_length=500, blank=True)
     data = models.DateTimeField(auto_now_add=True)
+    imagem = models.ImageField(upload_to='portfolio/', null=True, blank=True)
 
     def __str__(self):
         return self.titulo
