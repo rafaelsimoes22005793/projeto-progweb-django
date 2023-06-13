@@ -110,6 +110,9 @@ table, th, td {
   background-color: #1e1a1ab9;
 }
 
+.content > a {
+text-align: center
+}
 
 
 .divContactos {
