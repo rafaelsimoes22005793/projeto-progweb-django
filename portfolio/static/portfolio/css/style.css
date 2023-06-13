@@ -83,7 +83,6 @@ table, th, td {
   padding: 24px;
   width: 90%;
   height: 90%;
-  scroll-snap-type: x mandatory;
   scroll-padding: 24px;
   border-radius: 8px;
   gap: 12px;
