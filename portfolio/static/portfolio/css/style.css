@@ -79,7 +79,6 @@ table, th, td {
   font-size: 20px;
   border: 10px solid #00000000;
   overflow: auto;
-  overflow-x: scroll;
   padding: 24px;
   width: 90%;
   height: 90%;
