@@ -111,11 +111,11 @@ table, th, td {
 }
 
 .content > a {
-  text-align: center;
-  margin-top: 2%;
-  margin-left: 8%;
-  
-  }
+text-align: center;
+margin-top: 2%;
+margin-left: 8%;
+
+}
 
 .newPost{
   width: 500px;
