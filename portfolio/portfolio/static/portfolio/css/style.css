@@ -59,6 +59,10 @@ table, th, td {
   padding: 16px;
 }
 
+.content{
+  background-color: transparent;
+}
+
 .content > article {
   color: #eee;
   display: flex;
