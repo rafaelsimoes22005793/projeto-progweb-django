@@ -59,7 +59,7 @@ table, th, td {
   padding: 16px;
 }
 
-.content{
+.posts{
   margin: 0;
   width: 100%;
   height: 100%;
@@ -71,7 +71,7 @@ table, th, td {
 
 }
 
-.content > article {
+.posts > article {
   color: #eee;
   display: flex;
   text-align: center;
@@ -88,7 +88,7 @@ table, th, td {
   margin: 2rem auto;
 }
 
-.content > article .item {
+.posts > article .item {
   position: relative;
   left: 0%;
   flex: 0 0 30%;
@@ -101,7 +101,7 @@ table, th, td {
   background-color: #1e1a1ab9;
 }
 
-.content > article > .item > a {
+.posts > article > .item > a {
   position: relative;
   font-size: 16px;
   border-radius: 8px;
@@ -110,7 +110,7 @@ table, th, td {
   background-color: #1e1a1ab9;
 }
 
-.content > a {
+.posts > a {
 text-align: center
 
 }
@@ -531,6 +531,13 @@ footer {
 }
 
 /* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
 .timeline::after {
   content: '';
   position: absolute;
@@ -613,7 +620,6 @@ footer {
   background-color: white;
   position: relative;
   border-radius: 6px;
-  
 }
 
 .content img{
