@@ -40,7 +40,7 @@ def novo_post_view(request):
     form = PostForm(request.POST or None)
     if form.is_valid():
         form.save()
-        return redirect('portfolio:blog')
+        return redirect('blog')
     context = {'form': form}
     return render(request, 'portfolio/novo.html', context)
 
