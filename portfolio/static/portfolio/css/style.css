@@ -111,9 +111,11 @@ table, th, td {
 }
 
 .content > a {
-text-align: center
-
-}
+  text-align: center;
+  margin-top: 2%;
+  margin-left: 8%;
+  
+  }
 
 .newPost{
   width: 500px;
@@ -608,7 +610,7 @@ footer {
 }
 
 /* The actual content */
-.content {
+.contentTimeline {
   padding: 20px 30px;
   background-color: white;
   position: relative;
@@ -616,7 +618,7 @@ footer {
   
 }
 
-.content img{
+.contentTimeline img{
   justify-content: center;
   width: 25%;
   height: 25%;

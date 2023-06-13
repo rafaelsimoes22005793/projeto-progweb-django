@@ -10,26 +10,29 @@
     <main>
 
 
+        <div class="fade-in-text">
 
-        <div class="content">
-            <a href="{% url 'novo' %}" style="font-size: 30px; color: rgb(255, 140, 0);">Novo Post</a>
-            {% for post in posts %}
+            <div class="content">
+                <a href="{% url 'novo' %}" style="font-size: 30px; color: rgb(255, 140, 0);text-align: center;">Novo
+                    Post</a>
+                {% for post in posts %}
 
-            <article>
-                <div class="item">
-                    <b>
-                        <h2>{{post.titulo}}</h2>
-                    </b>
-                    <p>Autor: {{post.autor}}</p>
-                    <p>Descrição: {{post.descricao}}</p>
-                    <p>Link : {{post.link}}</p>
-                    <p>Data: {{post.data}}</p>
-                    <a href="{% url 'edita' post.id %}">🛠️</a>
-                    <a href="{% url 'apaga' post.id %}">❌</a>
-                </div>
-            </article>
+                <article>
+                    <div class="item">
+                        <b>
+                            <h2>{{post.titulo}}</h2>
+                        </b>
+                        <p>Autor: {{post.autor}}</p>
+                        <p>Descrição: {{post.descricao}}</p>
+                        <p>Link : {{post.link}}</p>
+                        <p>Data: {{post.data}}</p>
+                        <a href="{% url 'edita' post.id %}">🛠️</a>
+                        <a href="{% url 'apaga' post.id %}">❌</a>
+                    </div>
+                </article>
 
-            {% endfor %}
+                {% endfor %}
+            </div>
         </div>
 
 
