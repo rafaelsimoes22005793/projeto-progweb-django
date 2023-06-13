@@ -31,11 +31,6 @@ def sobre_view(request):
 	return render(request, 'portfolio/sobre.html')
 
 
-def home_page_view(request):
-    context = {'posts': Post.objects.all()}
-    return render(request, 'tarefas/home.html', context)
-
-
 def novo_post_view(request):
     form = PostForm(request.POST or None)
     if form.is_valid():
@@ -56,7 +51,7 @@ def edita_post_view(request, post_id):
     return render(request, 'portfolio/edita.html', context)
 
 
-def apaga_post_view(request, post_id):
+def apaga_post_view(post_id):
     Post.objects.get(id=post_id).delete()
     return redirect('blog')
 
