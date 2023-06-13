@@ -51,7 +51,7 @@ def edita_post_view(request, post_id):
     return render(request, 'portfolio/edita.html', context)
 
 
-def apaga_post_view(post_id):
+def apaga_post_view(request, post_id):
     Post.objects.get(id=post_id).delete()
     return redirect('blog')
 
