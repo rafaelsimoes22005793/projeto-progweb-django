@@ -20,6 +20,7 @@ urlpatterns = [
     path('novo/', views.novo_post_view, name='novo'),
     path('edita/<int:post_id>', views.edita_post_view, name='edita'),
     path('apaga/<int:post_id>', views.apaga_post_view, name='apaga'),
+    path('lista_cadeiras/', views.lista_cadeiras_view, name='lista_cadeiras'),
     
 ]
 

@@ -1,6 +1,8 @@
 from django.shortcuts import get_object_or_404, render,redirect
 from .models import Post
 from .forms import PostForm
+import requests
+from bs4 import BeautifulSoup
 
 
 
@@ -62,5 +64,39 @@ def edita_post_view(request, post_id):
 def apaga_post_view(request, post_id):
     Post.objects.get(id=post_id).delete()
     return redirect('blog')
+
+def lista_cadeiras_view(request):
+
+    lista_1ano = []
+    lista_2ano = []
+    lista_3ano = []
+
+    url = 'https://informatica.ulusofona.pt/cursos/licenciaturas/engenharia-informatica/lei-plano/'
+    response = requests.get(url)
+    soup = BeautifulSoup(response.content, 'html.parser')
+
+    tabelaSite = soup.find_all('table')[:3]
+
+    for tableBody in tabelaSite[0].find_all('tbody'):
+        for linha in tableBody.find_all('tr'):
+            dados = linha.find('td').text
+            lista_1ano.append(dados)
+
+    for tableBody in tabelaSite[1].find_all('tbody'):
+        for linha in tableBody.find_all('tr'):
+            dados = linha.find('td').text
+            lista_2ano.append(dados)
+
+    for tableBody in tabelaSite[2].find_all('tbody'):
+        for linha in tableBody.find_all('tr'):
+            dados = linha.find('td').text
+            lista_3ano.append(dados)
+
+    return render(request, 'portfolio/lista_cadeiras.html',{
+            'lista1ano': lista_1ano,
+            'lista2ano': lista_2ano,
+            'lista3ano': lista_3ano
+    })
+
 
 

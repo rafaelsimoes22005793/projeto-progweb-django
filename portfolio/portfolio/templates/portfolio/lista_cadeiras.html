@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+{% extends "portfolio/layout.html" %}
+
+
+<body>
+
+    {% block main %}
+    <main>
+
+        <div class="fade-in-text">
+            <div class="content"> 
+                <article>
+                    <div class="item">
+                        <p style="font-size: larger;"><i><b>1º Ano</b></i></p>
+                        {% for cadeira in lista1ano %}
+                        <p>• {{ cadeira }}</p>
+                        {% endfor %}
+                    </div>
+                </article>                
+            </div>
+        </div>
+
+        <div class="content"> 
+            <article>
+                <div class="item">
+                    <p style="font-size: larger;"><i><b>2º Ano</b></i></p>
+                    {% for cadeira in lista2ano %}
+                    <p>• {{ cadeira }}</p>
+                    {% endfor %}
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <div class="content">
+        <article>
+            <div class="item">
+                <p style="font-size: larger;"><i><b>3º Ano</b></i></p>
+                {% for cadeira in lista3ano %}
+                <p>• {{ cadeira }}</p>
+                {% endfor %}
+            </div>
+        </article>
+    </div>
+</div>
+
+        </div>
+
+
+
+    </main>
+    {% endblock main %}
+
+
+
+
+
+    <footer>
+        <div>
+            Rafael Simões - a22202620 - Universidade Lusófona 2023
+        </div>
+    </footer>
+
+
+
+
+
+</body>
+
+</html>
