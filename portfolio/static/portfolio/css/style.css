@@ -59,7 +59,7 @@ table, th, td {
   padding: 16px;
 }
 
-.posts{
+.divPosts{
   margin: 0;
   width: 100%;
   height: 100%;
@@ -71,7 +71,7 @@ table, th, td {
 
 }
 
-.posts > article {
+.divPosts > article {
   color: #eee;
   display: flex;
   text-align: center;
@@ -88,7 +88,7 @@ table, th, td {
   margin: 2rem auto;
 }
 
-.posts > article .item {
+.divPosts > article .item {
   position: relative;
   left: 0%;
   flex: 0 0 30%;
@@ -101,7 +101,7 @@ table, th, td {
   background-color: #1e1a1ab9;
 }
 
-.posts > article > .item > a {
+.divPosts > article > .item > a {
   position: relative;
   font-size: 16px;
   border-radius: 8px;
@@ -110,7 +110,7 @@ table, th, td {
   background-color: #1e1a1ab9;
 }
 
-.posts > a {
+.divPosts > a {
 text-align: center
 
 }
