@@ -59,11 +59,11 @@ table, th, td {
   padding: 16px;
 }
 
-.divPosts {
+.content > article {
   color: #eee;
   display: flex;
-  flex-direction: column;
   text-align: center;
+  flex-direction: column;
   font-size: 20px;
   border: 10px solid #00000000;
   overflow-x: scroll;
@@ -77,16 +77,19 @@ table, th, td {
   margin: 2rem auto;
 }
 
-
-.divPosts > p {
-  width: auto;
-  height: auto;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  color: #eee;
-  flex-direction: row;
+.content > article .item {
+  position: relative;
+  left: 0%;
+  flex: 0 0 30%;
+  padding: 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  text-align: start;
+  scroll-snap-align: start;
+  background-color: #1e1a1ab9;
 }
+
+
 
 .divContactos {
   width: 300px;

@@ -59,7 +59,7 @@ table, th, td {
   padding: 16px;
 }
 
-.divPosts {
+.content > article {
   color: #eee;
   display: flex;
   text-align: center;
@@ -75,6 +75,18 @@ table, th, td {
   border-radius: 8px;
   gap: 12px;
   margin: 2rem auto;
+}
+
+.content > article .item {
+  position: relative;
+  left: 0%;
+  flex: 0 0 30%;
+  padding: 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  text-align: start;
+  scroll-snap-align: start;
+  background-color: #1e1a1ab9;
 }
 
 
