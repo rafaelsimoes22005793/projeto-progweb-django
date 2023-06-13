@@ -9,23 +9,26 @@
     {% block main %}
     <main>
 
-        <a href="{% url 'novo' %}">Novo Post</a>
+
 
         <div class="content">
-        {% for post in posts %}
+            <a href="{% url 'novo' %}" style="font-size: 30px; color: rgb(255, 140, 0);;">Novo Post</a>
+            {% for post in posts %}
 
-        <article>
-            <div class="item">
-                <b><h2>{{post.titulo}}</h2></b>
-                <p>Autor: {{post.autor}}</p>
-                <p>Descrição: {{post.descricao}}</p>
-                <p>Link : {{post.link}}</p>
-                <p>Data: {{post.data}}</p>
-                <a href="{% url 'novo' %}">🛠️</a>
-            </div>
-        </article>
+            <article>
+                <div class="item">
+                    <b>
+                        <h2>{{post.titulo}}</h2>
+                    </b>
+                    <p>Autor: {{post.autor}}</p>
+                    <p>Descrição: {{post.descricao}}</p>
+                    <p>Link : {{post.link}}</p>
+                    <p>Data: {{post.data}}</p>
+                    <a href="{% url 'novo' %}">🛠️</a>
+                </div>
+            </article>
 
-        {% endfor %}
+            {% endfor %}
         </div>
 
 
