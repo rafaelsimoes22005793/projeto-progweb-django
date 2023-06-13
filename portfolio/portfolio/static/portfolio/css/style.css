@@ -620,8 +620,8 @@ footer {
 
 .contentTimeline img{
   justify-content: center;
-  width: 25%;
-  height: 25%;
+  width: 40%;
+  height: 40%;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
