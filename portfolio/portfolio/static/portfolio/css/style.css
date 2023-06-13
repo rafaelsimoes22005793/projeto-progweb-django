@@ -101,6 +101,15 @@ table, th, td {
   background-color: #1e1a1ab9;
 }
 
+.content > article > .item > a {
+  position: relative;
+  font-size: 16px;
+  border-radius: 8px;
+  text-align: end;
+  scroll-snap-align: start;
+  background-color: #1e1a1ab9;
+}
+
 
 
 .divContactos {

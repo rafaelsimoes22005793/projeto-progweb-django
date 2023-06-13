@@ -1,5 +1,7 @@
 from django.shortcuts import render, redirect
 from .models import Post
+from .forms import PostForm
+
 
 
 def index_view(request):
@@ -34,14 +36,12 @@ def home_page_view(request):
     return render(request, 'tarefas/home.html', context)
 
 
-
+def novo_post_view(request):
     form = PostForm(request.POST or None)
     if form.is_valid():
         form.save()
-        return redirect('posts:home')
-
+        return redirect('portfolio:blog')
     context = {'form': form}
-
-    return render(request, 'portfolio/nova.html', context)
+    return render(request, 'portfolio/novo.html', context)
 
 

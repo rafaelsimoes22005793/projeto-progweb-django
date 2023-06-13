@@ -30,5 +30,6 @@ urlpatterns = [
     path('blog', views.blog_view, name='blog'),
     path('sobre', views.sobre_view, name='sobre'),
     path('aboutme', views.aboutme_view, name='aboutme'),
+    path('novo', views.novo_post_view, name='novo'),
     
 ]
