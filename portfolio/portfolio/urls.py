@@ -31,5 +31,7 @@ urlpatterns = [
     path('sobre', views.sobre_view, name='sobre'),
     path('aboutme', views.aboutme_view, name='aboutme'),
     path('novo', views.novo_post_view, name='novo'),
+    path('edita/<int:post_id>', views.edita_post_view, name='edita'),
+    path('apaga/<int:post_id>', views.apaga_post_view, name='apaga'),
     
 ]

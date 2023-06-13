@@ -24,7 +24,8 @@
                     <p>Descrição: {{post.descricao}}</p>
                     <p>Link : {{post.link}}</p>
                     <p>Data: {{post.data}}</p>
-                    <a href="{% url 'novo' %}">🛠️</a>
+                    <a href="{% url 'edita' post.id %}">🛠️</a>
+                    <a href="{% url 'apaga' post.id %}">❌</a>
                 </div>
             </article>
 

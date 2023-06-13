@@ -44,4 +44,20 @@ def novo_post_view(request):
     context = {'form': form}
     return render(request, 'portfolio/novo.html', context)
 
+def edita_post_view(request, post_id):
+    post = Post.objects.get(id=post_id)
+    form = PostForm(request.POST or None, instance=post)
+
+    if form.is_valid():
+        form.save()
+        return redirect('blog')
+
+    context = {'form': form, 'post_id': post_id}
+    return render(request, 'portfolio/edita.html', context)
+
+
+def apaga_post_view(request, post_id):
+    Post.objects.get(id=post_id).delete()
+    return redirect('blog')
+
 
