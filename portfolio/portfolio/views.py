@@ -76,9 +76,9 @@ def lista_cadeiras_view(request):
 
     cadeiras = pre.split('/')
 
-    lista_cadeiras1 = cadeiras[0].split('\n')[2:]
-    lista_cadeiras2 = cadeiras[1].split('\n')[2:]
-    lista_cadeiras3 = cadeiras[2].split('\n')[2:]
+    lista_cadeiras1 = cadeiras[0].split('\n')[2:-1]
+    lista_cadeiras2 = cadeiras[1].split('\n')[2:-1]
+    lista_cadeiras3 = cadeiras[2].split('\n')[2:-1]
     
     
 
