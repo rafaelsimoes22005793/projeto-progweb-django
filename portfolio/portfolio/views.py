@@ -67,36 +67,31 @@ def apaga_post_view(request, post_id):
 
 def lista_cadeiras_view(request):
 
-    lista_1ano = []
-    lista_2ano = []
-    lista_3ano = []
-
-    url = 'https://informatica.ulusofona.pt/cursos/licenciaturas/engenharia-informatica/lei-plano/'
+    url = 'https://github.com/rafaelsimoes22005793/projeto-progweb-django'
     response = requests.get(url)
-    soup = BeautifulSoup(response.content, 'html.parser')
+    soup = BeautifulSoup(response.content, 'lxml')
 
-    tabelaSite = soup.find_all('table')[:3]
+    div = soup.find('div', class_='plain')
+    pre = div.find('pre').text
 
-    for tableBody in tabelaSite[0].find_all('tbody'):
-        for linha in tableBody.find_all('tr'):
-            dados = linha.find('td').text
-            lista_1ano.append(dados)
+    cadeiras = pre.split('/')
+    cadeiras = cadeiras[1:4]
 
-    for tableBody in tabelaSite[1].find_all('tbody'):
-        for linha in tableBody.find_all('tr'):
-            dados = linha.find('td').text
-            lista_2ano.append(dados)
+    lista_cadeiras1 = cadeiras[0].split('\n')[2:]
+    lista_cadeiras2 = cadeiras[1].split('\n')[2:]
+    lista_cadeiras3 = cadeiras[2].split('\n')[2:]
 
-    for tableBody in tabelaSite[2].find_all('tbody'):
-        for linha in tableBody.find_all('tr'):
-            dados = linha.find('td').text
-            lista_3ano.append(dados)
-
-    return render(request, 'portfolio/lista_cadeiras.html',{
-            'lista1ano': lista_1ano,
-            'lista2ano': lista_2ano,
-            'lista3ano': lista_3ano
+    return render(request, 'portfolio/LEI.html', {
+        'lista1': lista_cadeiras1,
+        'lista2': lista_cadeiras2,
+        'lista3': lista_cadeiras3,
     })
+
+
+
+
+
+
 
 
 
