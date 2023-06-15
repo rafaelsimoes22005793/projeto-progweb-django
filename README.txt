@@ -9,9 +9,7 @@ Algebra Linear
 Linguagens de Programação I
 Competências Comportamentais
 Arquitectura de Computadores
-
 /
-
 Linguagens de Programação II
 Sistemas Operativos
 Arquitecturas Avançadas de Computadores
@@ -22,9 +20,7 @@ Análise e Concepção de Sistemas
 Computação Gráfica
 Sistemas de Suporte à Decisão
 Programação Web
-
 /
-
 Interacção Humano Máquina
 Engenharia de Software
 Compiladores
