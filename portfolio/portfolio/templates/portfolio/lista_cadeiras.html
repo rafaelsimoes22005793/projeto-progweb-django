@@ -10,7 +10,7 @@
     <main>
 
         <div class="fade-in-text">
-            <div class="content"> 
+            <div class="content">
                 <article>
                     <div class="item">
                         <p style="font-size: larger;"><i><b>1º Ano</b></i></p>
@@ -18,37 +18,31 @@
                         <p>• {{ cadeira }}</p>
                         {% endfor %}
                     </div>
-                </article>                
+                </article>
+            </div>
+
+            <div class="content">
+                <article>
+                    <div class="item">
+                        <p style="font-size: larger;"><i><b>2º Ano</b></i></p>
+                        {% for cadeira in lista2ano %}
+                        <p>• {{ cadeira }}</p>
+                        {% endfor %}
+                    </div>
+                </article>
+            </div>
+
+            <div class="content">
+                <article>
+                    <div class="item">
+                        <p style="font-size: larger;"><i><b>3º Ano</b></i></p>
+                        {% for cadeira in lista3ano %}
+                        <p>• {{ cadeira }}</p>
+                        {% endfor %}
+                    </div>
+                </article>
             </div>
         </div>
-
-        <div class="content"> 
-            <article>
-                <div class="item">
-                    <p style="font-size: larger;"><i><b>2º Ano</b></i></p>
-                    {% for cadeira in lista2ano %}
-                    <p>• {{ cadeira }}</p>
-                    {% endfor %}
-                </div>
-            </article>
-        </div>
-    </div>
-
-    <div class="content">
-        <article>
-            <div class="item">
-                <p style="font-size: larger;"><i><b>3º Ano</b></i></p>
-                {% for cadeira in lista3ano %}
-                <p>• {{ cadeira }}</p>
-                {% endfor %}
-            </div>
-        </article>
-    </div>
-</div>
-
-        </div>
-
-
 
     </main>
     {% endblock main %}
