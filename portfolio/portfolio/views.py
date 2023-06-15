@@ -77,9 +77,9 @@ def lista_cadeiras_view(request):
     cadeiras = pre.split('/')
     cadeiras = cadeiras[1:4]
 
-    lista_cadeiras1 = cadeiras[0].split('\n')[2:]
-    lista_cadeiras2 = cadeiras[1].split('\n')[2:]
-    lista_cadeiras3 = cadeiras[2].split('\n')[2:]
+    lista_cadeiras1 = cadeiras[0].split('\n')
+    lista_cadeiras2 = cadeiras[1].split('\n')
+    lista_cadeiras3 = cadeiras[2].split('\n')
 
     return render(request, 'portfolio/LEI.html', {
         'lista1': lista_cadeiras1,
