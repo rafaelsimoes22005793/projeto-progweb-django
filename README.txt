@@ -1,5 +1,37 @@
-# vim: set ft=rst:
+Matemática Discreta
+Fundamentos de Programação
+Sistemas Digitais
+Matemática I
+Fundamentos da Física
+Algoritmia e Estruturas de Dados
+Matemática II
+Algebra Linear
+Linguagens de Programação I
+Competências Comportamentais
+Arquitectura de Computadores
 
-See https://help.pythonanywhere.com/ (or click the "Help" link at the top
-right) for help on how to use PythonAnywhere, including tips on copying and
-pasting from consoles, and writing your own web applications.
+/
+
+Linguagens de Programação II
+Sistemas Operativos
+Arquitecturas Avançadas de Computadores
+Sinais e Sistemas
+Bases de Dados
+Redes de Computadores
+Análise e Concepção de Sistemas
+Computação Gráfica
+Sistemas de Suporte à Decisão
+Programação Web
+
+/
+
+Interacção Humano Máquina
+Engenharia de Software
+Compiladores
+Sistemas de Informação Multimédia
+Computação Distribuída
+Computação Móvel
+Inteligência Artificial
+Arquitetura de Sistemas Empresariais
+Segurança Informática
+Trabalho Final de Curso
